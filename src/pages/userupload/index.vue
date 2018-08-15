@@ -94,7 +94,7 @@
    <div style="height: 40px;"></div>
    <view>
      <canvas class='share-canvas' :style="{ width: canvasWidth + 'px', height: canvasHeight + 'px' }" canvas-id="share_canvas"></canvas>
-     <img :src="imgsrc1" alt="">
+     <img :src="imgsrc1" alt="" style="width:100px; height:80px;">
    </view>
   </div>
 

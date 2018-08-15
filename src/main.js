@@ -17,12 +17,12 @@ export default {
     // 页面前带有 ^ 符号的，会被编译成首页，其他页面可以选填，我们会自动把 webpack entry 里面的入口页面加进去
     pages: [
      'pages/login/main',
-     'pages/home/main',
+     '^pages/home/main',
      'pages/register/main',
      'pages/forgetpassword/main',
      'pages/userbaseinfo/main',
      'pages/usercarinfo/main',
-     '^pages/userupload/main',
+     'pages/userupload/main',
      'pages/useradress/main',
       "pages/billList/billList",
       "pages/bill/bill",
