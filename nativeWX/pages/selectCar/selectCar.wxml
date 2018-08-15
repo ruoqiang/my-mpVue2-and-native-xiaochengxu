@@ -1,0 +1,19 @@
+<!--pages/selectCar/selectCar.wxml bindtap="selectCarGotoPage"-->
+<view class="contenter">
+<view class="title">
+    请先选择要查询的车辆
+  </view>
+  <view class="h40"></view>
+<view class="form-box">
+        <view class="">
+          <view class="car-list" wx:for="{{carInfoList}}" data-carNo="{{item.CarNum}}" data-cardnum="{{item.CardNum}}" wx:key="index" bindtap="gotoRecord">
+            <view class="car-img">
+              <image src="../../static/images/img01.png"></image>
+            </view>
+            <view class="car-number">{{item.CarNum}}</view>
+            <view class="icon-more"></view>
+          </view>
+        </view>
+
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/billList/billList.wxml-->
+<view class="bill-list">
+    
+      <view class="tab-title">
+        <view class="tab-btn" wx:for="{{tabTitle}}" wx:key="index" bindtap="tabClick" data-num="{{index}}">{{item}}</view>
+        <view class="line" style="left:{{domLeft}}">
+
+        </view>
+        <!-- <view class="tab-btn active">已还账单</view>
+        <view class="tab-btn">未还账单</view> -->
+      </view>
+      <view style="height:41px;"></view>
+      <view class="bill-list-con-wrap">
+          <view class="bill-list-con">
+          <view class="bill-item" wx:for="{{billList}}" wx:key="index" >
+            <view class="bill-state-box">
+              <view class="up">9月</view>
+              <view class="down">未还账单(<text>逾期</text>)  </view>
+            </view>
+            <view class="bill-number-box">
+              ￥1000.00
+            </view>
+          </view>
+        </view>
+        <!-- <view class="tipsStatusBox" v-show="!billList.length">
+          <tipsStatus :title="listTips.text" :statusClass="listTips.status"></tipsStatus>
+        </view> -->
+      </view>
+
+    
+
+  </view>

@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <view bindtap="testLogin">登录</view>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+   
+  </view> -->
+</view>
+ <view class="card-box">
+        <view class="card-item">
+            <image src="../../static/images/icon-ETC.png"></image>
+            <view>办理ETC</view>
+        </view>
+        <view class="card-item">
+            <view class="" bindtap="goToApplycation">
+                <image src="../../static/images/icon-applyRecord.png"></image>
+                <view>申请记录</view>
+            </view>
+        </view>
+        <view class="card-item" >
+          <image src="../../static/images/icon-bill.png" data-type="1" bindtap="goToSelectCar"></image>
+                <view>账单查询</view>
+        </view>
+        <view class="card-item" >
+            <view class="">
+              <image src="../../static/images/icon-record.png" data-type="2" bindtap="goToSelectCar"></image>
+               <view>通行记录</view>
+            </view>
+        </view>
+    </view>

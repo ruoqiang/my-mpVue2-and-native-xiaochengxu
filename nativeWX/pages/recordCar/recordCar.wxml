@@ -1,0 +1,85 @@
+<!--pages/recordCar/recordCar.wxml-->
+<view id="record-car">
+    <view class="record-img" >
+      <view class="record-time-text">
+        <view class="title">
+          出站时间段
+        </view>
+        <view class="time-text">
+           <!-- <picker mode="date" value="{{date}}"  end="{{date2}}" bindchange="bindDateChange">  
+                    <view class="picker">  
+                    {{date}}  
+                    </view>  
+                </picker>  -->
+          
+              <picker mode="date" value="{{date}}" bindchange="DateChange">  
+                    <view class="picker">  
+                    <text class="time"> {{defaultDate1}} </text>
+                    </view>  
+                </picker>
+                
+          <text class="text">至</text>
+          <picker mode="date" start="2016-01-01" value="{{defaultDate2}}" bindchange="DateChange2">  
+                    <view class="picker">  
+                    <text class="time">{{defaultDate2}}</text>
+                    </view>  
+                </picker>
+          
+        </view>
+        <view class="btn" bindtap="_searchList">
+            <view class="btnWrap">
+             <view class="button">查询</view>
+            </view>
+          
+        </view>
+      </view>
+    </view>
+    <view class="record-list-box-wrap" >
+        <view class="record-list-box">
+            <scroll-view scroll-y style='height:{{imgHeight}}' 
+            bindscrolltolower="loadMore" 
+            bindscroll="scroll" 
+            scroll-into-view="{{toView}}"
+            scroll-with-animation="true" 
+            scroll-top="{{scrollTop}}">
+               <view class="record-list" wx:for="{{recordList}}" wx:key="index">
+                <view class="record-list-title">
+                    <view>通行费用  </view>
+                    <view class="cost">￥{{item.consumeMoney}}</view>
+                </view>
+                <view class="record-list-info">
+                    <view class="in-out-list">
+                        <view class="go-site">
+                            进站名：<text>{{item.inStation}}</text>
+                        </view>
+                        <view class="go-time">{{item.inTime}}</view>
+                    </view>
+                    <view class="in-out-list">
+                        <view class="go-site">
+                            出站名：<text>{{item.outStation}}</text>
+                        </view>
+                        <view class="go-time">{{item.outTime}}</view>
+                    </view>
+                </view>
+            </view>
+             <view class="dataTipsBtnBox" wx:if="{{!hasMore}}"><view class="seeMore noMore"><text>没有更多记录了</text></view></view>
+             <view style="height:20px;"></view>
+            </scroll-view>
+        </view>
+    </view>
+    <!-- <area-picker id='areaPicker1' 
+        defaultDate= "{{defaultDate1}}"
+        bind:cancelEvent="_cancelEvent"  
+        bind:confirmEvent="_confirmEvent">
+        </area-picker>
+    <area-picker id='areaPicker2' 
+        defaultDate="{{defaultDate2}}"
+        bind:cancelEvent="_cancelEvent"  
+        bind:confirmEvent="_confirmEvent2">
+    </area-picker> -->
+    <view class="icon-top" bindtap="backTop" wx:if="{{backBtnIsShow}}"></view>
+    <!-- <top-tips :text="tipsText" ref="topTips"></top-tips> -->
+    <!-- <view class="mask" >
+    </view> -->
+  </view>
+

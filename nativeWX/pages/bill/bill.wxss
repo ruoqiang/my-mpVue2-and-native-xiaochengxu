@@ -1,0 +1,194 @@
+/* pages/bill/bill.wxss */
+.billBoxWrap{
+    background:#f5f5f5;
+}
+.record-img {
+    height: 0px;
+    padding-bottom: 69.1%;
+    background: #d9e1ff;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 60.1%;
+  }
+ @media only screen and (min-width: 360px) {
+.record-img {
+    padding-bottom: 60.1%;
+}
+}
+@media only screen and (min-width: 410px) {
+.record-img {
+    padding-bottom: 55.1%;
+}
+}
+.record-img .mask-01 {
+  padding-bottom: 14%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #f3f4f5;
+}
+.record-img .record-time-span {
+  width: 93%;
+  height: 190px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 0;
+  background: #fff;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+}
+.record-img .record-time-span .title {
+  line-height: 25px;
+  height: 25px;
+  color: #333;
+  font-size: 16px;
+  margin-top: 25px;
+}
+.record-img .record-time-span .title span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.record-img .record-time-span .price-span {
+  line-height: 62px;
+  height: 62px;
+  font-size: 30px;
+  color: #2d4ed1;
+}
+.record-img .record-time-span .repay-time {
+  line-height: 13px;
+  height: 13px;
+  font-size: 13px;
+  color: #333;
+}
+.record-img .record-time-span .time-span {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 10px;
+  position: relative;
+}
+.record-img .record-time-span .time-span:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 1px solid #ddd;
+  content: ' ';
+  width: 100%;
+}
+.record-img .record-time-span .time-span .time-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3%;
+          flex: 0 0 33.3%;
+  position: relative;
+  font-size: 13px;
+}
+.record-img .record-time-span .time-span .time-item:after {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 1px solid #ddd;
+  content: ' ';
+  height: 100%;
+}
+.record-img .record-time-span .time-span .time-item:last-child:after {
+  display: none;
+}
+.record-img .record-time-span .time-span .time-item .desc-up {
+  display: inline-block;
+  padding-top: 6px;
+  position: relative;
+  vertical-align: middle;
+  color: #333;
+}
+.record-img .record-time-span .time-span .time-item .desc-down {
+  padding-top: 5px;
+  line-height: 19px;
+  height: 19px;
+  font-size: 14px;
+  color: #2d4ed1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.button-wrap {
+    padding: 10px 0 10px 0;
+    display: flex;
+    margin-top: 25px;
+  }
+  .button-wrap view {
+            flex: 1 1 50%;
+  }
+  .buttonBox {
+    padding: 0 10px;
+    position: relative;
+    color: #2d4ed1;
+    font-size: 16px
+}
+
+.buttonBox .button {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background: #2d4ed1;
+    border-radius: 3px
+}
+
+.buttonBox .button:active {
+    background: #1f43d2
+}
+
+.buttonBox .button.glod {
+    background: #ecb81c
+}
+
+.buttonBox .button.wechatColor {
+    background: #12c42b
+}
+
+.buttonBox .button.babyBlue {
+    background: #589fd7
+}
+
+.buttonBox .button.disable {
+    background: #ddd;
+    pointer-events: none
+}
+
+.buttonBox .button.reverse {
+    background: none;
+    color: #2d4ed1;
+    padding: 9px 0;
+    border: 1px solid #2d4ed1
+}
+
+.buttonBox .button.reverse.active,.buttonBox .button.reverse:hover {
+    color: #fff;
+    background: #2d4ed1;
+    border: 0 solid #2d4ed1;
+    padding: 9px 0;
+}
+
+.buttonBox .button.reverse.active a,.buttonBox .button.reverse:hover a {
+    color: #fff
+}
+
+.buttonBox .button.reverse a {
+    color: #2d4ed1
+}
+.h12 {
+    height: 11px;
+}

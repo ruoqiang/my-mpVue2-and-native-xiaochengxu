@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+      "dialog": "/components/Dialog/dialog",
+      "area-picker": "/components/area-picker/area-picker"
+    }
+  }

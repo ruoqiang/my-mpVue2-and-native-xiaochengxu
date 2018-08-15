@@ -1,0 +1,50 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.card-item image{
+  width: 40px;
+  height: 40px;
+}
+.card-box {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+}
+.card-box .card-item {
+  float: left;
+  width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+.card-box .card-item block {
+  font-size: 12px;
+  color: #333;
+  margin-top: 7px;
+}

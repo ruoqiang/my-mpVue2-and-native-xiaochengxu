@@ -1,0 +1,203 @@
+/* .bill-list {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  overflow-y: scroll;
+} */
+
+.bill-list .tab-title {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    line-height: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.bill-list .tab-title:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+  content: ' ';
+  width: 100%;
+}
+
+.bill-list .tab-title .tab-btn {
+  color: #333;
+  font-size: 15px;
+  width: 33%;
+  position: relative;
+}
+
+.bill-list .tab-title .tab-btn.active {
+  color: #2d4ed1;
+}
+
+.bill-list .tab-title .line {
+  width: 33%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bill-list .tab-title .line:before {
+  position: absolute;
+  content: ' ';
+  width: 30px;
+  height: 2px;
+  background: #2d4ed1;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  z-index: 2;
+}
+
+.bill-list .bill-list-con {
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+.bill-list .bill-list-con:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+  content: ' ';
+  width: 100%;
+}
+
+.bill-list .bill-list-con .bill-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 14px;
+  align-items:center;
+}
+
+.bill-list .bill-list-con .bill-item:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+  content: ' ';
+  width: 100%;
+}
+
+.bill-list .bill-list-con .bill-state-box {
+  text-align: left;
+  height: 71px;
+}
+
+.bill-list .bill-list-con .bill-state-box .up {
+  font-size: 15px;
+  color: #333;
+  margin-top: 17px;
+}
+
+.bill-list .bill-list-con .bill-state-box .down {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.bill-list .bill-list-con .bill-state-box .down text {
+  font-size: 12px;
+  color: #f34e1c;
+}
+
+.bill-number-box {
+  font-size: 15px;
+  color: #2d4ed1;
+  padding-right: 14px;
+  text-align: right !important;
+}
+
+.bill-number-box .up {
+  font-size: 15px;
+  color: #2d4ed1;
+}
+
+.tipsStatusBox {
+  margin-top: 46%;
+  position: relative;
+}
+
+.icon-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.icon-top:before {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+
+.dataTipsBtnBox {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  height: 40px;
+}
+
+.dataTipsBtnBox .seeMore {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.dataTipsBtnBox .seeMore text {
+  font-size: 14px;
+  color: #333;
+  position: relative;
+}
+
+.dataTipsBtnBox .noMore {
+  position: relative;
+}
+
+.dataTipsBtnBox .noMore text {
+  font-size: 14px;
+}
+
+.dataTipsBtnBox .noMore text:after {
+  background: none;
+}
+
+.loadingBox {
+  padding-top: 10px;
+}
+
+.ptc {
+  margin-top: 10%;
+  position: relative;
+}

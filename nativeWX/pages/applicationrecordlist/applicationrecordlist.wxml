@@ -1,0 +1,26 @@
+<!--pages/applicationrecordlist/applicationrecordlist.wxml-->
+<!-- <view class="list-box-wrap" v-for="item in ApplyInfoList" :key="item.ID">
+                <view class="list-box">
+                  <view class="list-car-info">
+                    <view><text>申请人 </text><text v-html="item.Name.slice(0,13)">李丽</text></view>
+                    <view><text>车牌号</text><text>{{item.CarNum}}</text></view>
+                    <view><text>车牌颜色</text><text v-html="item.CarColor">黄</text><text v-show="item.CarColor.length===1">牌</text></view>
+                  </view>
+                  <view class="status-btn" :class="calStatusBtn(item.CheckStatus)" v-html="formCheckStatus(item.CheckStatus)">
+                  </view>
+                </view>
+            </view>
+            <view class="h15"></view> -->
+<view class="list-box-wrap">
+    <view class="list-box" wx:for="{{list}}" wx:key="{{index}}">
+        <view class="list-car-info">
+        <view><text>申请人 </text><text >{{item.Name}}</text></view>
+        <view><text>车牌号 </text><text>{{item.CarNum}}</text></view>
+        <view><text>车牌颜色 </text><text >{{item.CarColor}}</text><text >牌</text></view>
+        </view>
+        <view class="status-btn {{item.CheckStatus ==='1'? 'success':'fail'}}" >
+            {{item.CheckStatusText}}
+        </view>
+    </view>
+</view>
+<view class="h15"></view>

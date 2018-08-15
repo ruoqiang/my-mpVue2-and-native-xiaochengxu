@@ -1,0 +1,28 @@
+    /* components/Dialog/dialog.wxss */
+    .wx-mask{
+      position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .wx-dialog{
+       position: relative;
+       z-index: 1001; 
+    }
+    .data-head{display: flex;
+    justify-content: space-around;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    font-size: 16px;
+    }
+    .data-head .confirm{color: #fa8919;}
+    picker-view-column {
+        text-align: center;
+    }
+    .dateValue{
+        font-size: 18px;
+    }

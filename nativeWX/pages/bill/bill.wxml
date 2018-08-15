@@ -1,0 +1,39 @@
+<view class="billBoxWrap">
+        <view class="record-img">
+            <view class="mask-01"></view> 
+            <view class="record-time-span">
+                <view class="shadow01"></view> <view class="shadow02"></view> <view class="seal-box"></view>
+                <view class="title"><span>昨日服务费(元)</span><span class="icon-tips"></span></view>
+                <view class="price-span">
+                    {{billInfoList.DayCharge}}
+                </view> <view class="time-span">
+                    <view class="time-item">
+                        <view class="desc-title">
+                            <view class="desc-up">应还金额(元)</view>
+                        </view> <view class="desc-down">{{billInfoList.AllConsume}}</view>
+                    </view>
+                    <view class="time-item">
+                        <view class="desc-title">
+                            <view class="desc-up">当日已还金额(元)</view>
+                        </view> <view class="desc-down">{{billInfoList.DayAlreadyPay}}</view>
+                    </view> <view class="time-item">
+                        <view class="desc-title">
+                            <view class="desc-up">待还金额(元)</view>
+                        </view> <view class="desc-down">{{billInfoList.AllConsume - billInfoList.DayAlreadyPay}}</view>
+                    </view>
+                </view>
+            </view>
+        </view> <view class="h12"></view>
+         <view class="button-wrap">
+            <view class="left-btn">
+                <view class="buttonBox">
+                    <view class="button  reverse" bindtap="goToBillList">查看还款记录</view>
+                </view>
+            </view>
+            <view class="right-btn">
+                <view class="buttonBox">
+                    <view class="button " bindtap="goToPayMent">去还款</view>
+                </view>
+            </view>
+        </view>
+    </view>
