@@ -18,4 +18,7 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# nativeWX部分
+微信开发者工具直接打开nativeWX目录，开发完成后按照说明把该目录下的文件合并到mpvue项目下的dist中。说明参考
+
+https://www.cnblogs.com/ruoqiang/p/9474432.html
